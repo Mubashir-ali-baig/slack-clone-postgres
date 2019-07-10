@@ -1,6 +1,9 @@
 import Sequelize from 'sequelize';
 const sequelize = new Sequelize('slack','postgres','cancer1998',{
   dialect: 'postgres',
+  define:{
+    underscored:true,
+  }
 });
 
 const models= {
